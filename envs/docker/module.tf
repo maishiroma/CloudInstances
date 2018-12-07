@@ -1,5 +1,5 @@
 module "docker_master_instance" {
-  source = "../terraformModule"
+  source = "../../modules/dockerCluster"
 
   instance_name  = "${var.master_name}"
   tags           = "${var.master_tags}"
@@ -8,7 +8,7 @@ module "docker_master_instance" {
 }
 
 module "docker_worker_instance" {
-  source = "../terraformModule"
+  source = "../../modules/dockerCluster"
 
   instance_name  = "${var.worker_name}"
   tags           = "${var.worker_tags}"

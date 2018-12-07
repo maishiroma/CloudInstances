@@ -1,5 +1,5 @@
 module "kube_cluster" {
-  source = "../kubeClusterModule"
+  source = "../../modules/kubeCluster"
 
   cluster_name  = "${var.cluster_name}"
   tags          = "${var.cluster_tags}"

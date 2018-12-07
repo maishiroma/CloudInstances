@@ -21,10 +21,6 @@ resource "google_container_cluster" "gcp_kubernetes" {
       "https://www.googleapis.com/auth/monitoring",
     ]
 
-    metadata {
-      sshKeys = "$(file(${var.keypath}))"
-    }
-
     labels {
       what-is-dis = "mai-cluster"
     }

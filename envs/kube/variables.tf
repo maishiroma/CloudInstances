@@ -27,7 +27,7 @@ variable "cluster_tags" {
 }
 
 variable "cluster_count" {
-  default = 1
+  default = 2
 }
 
 variable "admin_username" {}
